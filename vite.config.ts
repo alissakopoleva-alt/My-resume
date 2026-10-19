@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
   const emitSourcemaps = mode === 'development'
 
   return {
-    base: base: '/My-resume/', `${process.env.FIGMA_PUBLIC_URL}/` : '/',
+    base:  '/My-resume/',
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
